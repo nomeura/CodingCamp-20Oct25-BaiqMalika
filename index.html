@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Kiya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container bg-gray-200">
+            <div class="profile-left">
+
+                <!-- Replace src with your image path or style this div with CSS as a circular placeholder -->
+                <img src="https://fastly.picsum.photos/id/315/200/200.jpg?hmac=cE5OEQSh9gvXqkP0fkrmaSbqLfc_KQdDPtH7yBbeuiQ"
+                    alt="Profile picture" class="profile-img">
+            </div>
+
+            <nav class="flex gap-2" aria-label="Main navigation">
+                <a href="#home-page" class="border rounded p-2">Home</a>
+                <a href="#profile-page" class="border rounded p-2">Our Profile</a>
+                <a href="#portfolio-page" class="border rounded p-2">Portofolio</a>
+                <a href="#message-page" class="border rounded p-2">Message Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mb-10">
+
+        <section class="hero-section p-4 min-h-[600px]" id="home-page"> 
+            <h1 class="text-3xl font-bold mb-4">Hello, <span id="nama"></span>! Welcome to my website!</h1>
+                delivering high-quality work.</p>
+        </section>
+        <hr>
+        <section class="profile-section p-4 min-h-[600px]" id="profile-page">
+            <h2 class="text-3xl font-bold mb-4">Our Profile</h2>
+            <p class="text-lg mb-4">We specialize in web development, graphic design, and digital marketing. Our team
+                consists of experienced designers, developers, and marketers who work together to create innovative
+                solutions for our clients.</p>
+        </section>
+        <hr>
+        <section class="portfolio-section p-4 min-h-[600px]" id="portfolio-page">
+            <h2 class="text-3xl font-bold mb-4">Portfolio</h2>
+            <p class="text-lg">Here are some of our recent projects:</p>
+        </section>
+        <hr>
+        <section class="message-us-section p-4 min-h-[600px]" id="message-page">
+            <h2 class="text-3xl font-bold mb-4">Message Us</h2>
+            <p class="text-lg">Feel free to reach out to us for any inquiries or collaborations!</p>
+            <form class="mt-4" name="contactForm">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded"></textarea>
+                </div>
+                <button type="button" onclick="validateForm();" class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p class="text-center">&copy; 2024 Portofolio Kiya. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
