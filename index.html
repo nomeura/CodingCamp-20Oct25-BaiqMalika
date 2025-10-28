@@ -17,8 +17,11 @@
                 <!-- Replace src with your image path or style this div with CSS as a circular placeholder -->
                 <img src="https://fastly.picsum.photos/id/315/200/200.jpg?hmac=cE5OEQSh9gvXqkP0fkrmaSbqLfc_KQdDPtH7yBbeuiQ"
                     alt="Profile picture" class="profile-img">
+        
+                <div class="flex items-center gap-2">
+                    <p class="font-medium font-medium"> Baiq Malika Adzkiya Azka</p>
+                </div>
             </div>
-
             <nav class="flex gap-2" aria-label="Main navigation">
                 <a href="#home-page" class="border rounded p-2">Home</a>
                 <a href="#profile-page" class="border rounded p-2">Our Profile</a>
@@ -30,9 +33,19 @@
 
     <main class="mb-10">
 
-        <section class="hero-section p-4 min-h-[600px]" id="home-page"> 
-            <h1 class="text-3xl font-bold mb-4">Hello, <span id="nama"></span>! Welcome to my website!</h1>
-                delivering high-quality work.</p>
+        <section class="hero-section p-4 min-h-[600px]" id="home-page">
+            <div class="flex flex-col md:flex-row md:items-start gap-6">
+                <div>
+                <img src=""
+                    alt="Profile picture" class="size-100 shadow-xl rounded-md">
+                </div>
+                <div>
+            <h1 class="text-3xl font-bold mb-4">Hello, <span id="nama"></span>! </h1>
+            <h1 class="text-3xl font-bold mb-4">I'm Baiq Malika Adzkiya Azka</h1>
+            <p class="text-lg">I'm a highschool student in Al Izzah International Islamic Boarding School Batu and about to graduate in June 2026. I'm particularly strong in Mathematics and English since I was little. Moreover, I enjoyed applying my analytical thinking to programming and computer science projects including this website. I regularly joined numerous math competitions such as the Science National Olympiad in Indonesia. I'm also actively participating in my school's events and social volunteering programs as part of different committees including design, documentation, sponsorship, math competitions, as well as religious activities</p>
+            </div>
+
+        </div>
         </section>
         <hr>
         <section class="profile-section p-4 min-h-[600px]" id="profile-page">
@@ -63,7 +76,8 @@
                     <label for="message" class="block text-lg mb-2">Message:</label>
                     <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded"></textarea>
                 </div>
-                <button type="button" onclick="validateForm();" class="bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+                <button type="button" onclick="validateForm();" class="bg-blue-500 text-white px-4 py-2 rounded">Send
+                    Message</button>
         </section>
         <hr>
     </main>
